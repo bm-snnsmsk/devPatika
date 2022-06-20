@@ -12,6 +12,31 @@
   </head>
   <body>
 
+    <h1 class="d-sm-none bg-info">xs - mobil görünüme hoş geldiniz </h1>
+    <h1 class="d-none d-sm-block d-md-none bg-primary">sm - Tablet görünüme hoş geldiniz </h1>
+    <h1 class="d-none d-md-block d-lg-none bg-danger">md - laptop görünüme hoş geldiniz </h1>
+    <h1 class="d-none d-lg-block bg-success d-xl-none">lg - desktop görünüme hoş geldiniz </h1>
+    <h1 class="d-none d-xl-block bg-warning">xl - geniş ekran görünüme hoş geldiniz </h1>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-info ">lorem</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-success">lorem</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-secondary">lorem</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-primary">lorem</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-warning d-lg-none d-xl-block">lorem</div>
+        <div class="col-sm-6 col-md-4 col-lg-3 col-xl-2 bg-danger  d-lg-none d-xl-block">lorem</div>
+      </div>
+    </div>
+
+    <div class="container border border-3 my-3">
+      <div class="row">
+        <div class="col-12 bg-dark text-warning">offset-0</div>
+        <div class="col-8 offset-4 bg-dark text-warning">offset-4</div>
+        <div class="col-8 offset-2 bg-info text-danger">offset-2</div>
+      </div>
+    </div>   
+    
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="#">Kendali Yazılım</a>
@@ -163,7 +188,7 @@
             <h5>Kendali Yazılım</h5>
             <small class="d-block mb-3 text-muted">© 2017–2021</small>
           </div>
-          <div class="col-6 col-md">
+          <div class="col-6 col-md-3">
             <h5>Features</h5>
             <ul class="list-unstyled text-small">
               <li><a class="link-secondary" href="#">Cool stuff</a></li>
@@ -174,7 +199,7 @@
               <li><a class="link-secondary" href="#">Last time</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md">
+          <div class="col-6 col-md-3">
             <h5>Resources</h5>
             <ul class="list-unstyled text-small">
               <li><a class="link-secondary" href="#">Resource name</a></li>
@@ -183,7 +208,7 @@
               <li><a class="link-secondary" href="#">Final resource</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md">
+          <div class="col-6 col-md-3">
             <h5>Resources</h5>
             <ul class="list-unstyled text-small">
               <li><a class="link-secondary" href="#">Business</a></li>
@@ -192,7 +217,7 @@
               <li><a class="link-secondary" href="#">Gaming</a></li>
             </ul>
           </div>
-          <div class="col-6 col-md">
+          <div class="col-6 col-md-3">
             <h5>About</h5>
             <ul class="list-unstyled text-small">
               <li><a class="link-secondary" href="#">Team</a></li>
