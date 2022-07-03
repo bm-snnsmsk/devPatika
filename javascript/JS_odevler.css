@@ -1,0 +1,11 @@
+body{
+    background-color: #333333;
+}
+.content{
+    margin-top: 150px;
+    text-align: center;
+    color: hsl(35, 95%, 47%);
+}
+.icerik{
+    font-size: 20px;
+}
