@@ -9,3 +9,35 @@ body{
 .icerik{
     font-size: 20px;
 }
+
+
+/********************  TO DO ödevi CSS START   ****************/
+.liste{
+    width: 100%;
+    list-style-type: none;
+   
+}
+.snnUl{
+    width: 100%;
+    margin: 0; 
+    padding: 0;
+}
+.snn{
+    font-size: 26px;
+    color: #000000;
+    list-style: none;
+    font-weight: bold;
+    width: 100%;
+    margin: 0;
+}
+.snn:nth-child(odd){
+    background-color: #ffffff;
+}
+.snn:nth-child(even){
+    background-color: #c5c5c5;
+}
+.snn:hover{
+cursor: pointer;
+text-decoration: line-through;
+}
+/********************  TO DO ödevi CSS END   ****************/
