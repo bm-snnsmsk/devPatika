@@ -33,7 +33,7 @@
       deneme text
     </div>
 
-    <ul class="liste" id="lst">
+<!--     <ul class="liste" id="lst">
         <li>eleman1</li>
         <li>eleman2</li>
         <li>eleman3</li>
@@ -44,9 +44,9 @@
         <li>eleman8</li>
         <li>eleman9</li>
         <li>eleman10</li>
-    </ul>
+    </ul> -->
 
-
+<!-- 
     <form id="frm">
         <div class="mb-3">
           <label for="exampleInputEmail1" class="form-label">Email address</label>
@@ -69,9 +69,9 @@
 
 
         <button type="submit" class="btn btn-primary" id="gonder">Submit</button>
-      </form>
+      </form> -->
 
-     <div class="container">
+    <!--  <div class="container">
         <div class="row">
             <div class="col-8">
                 <li>item1</li>
@@ -109,7 +109,7 @@
           </div>
      </div>
 
-
+ -->
 
 
 
@@ -313,7 +313,7 @@ d.innerHTML = a(dizi) ;
  }
  d.innerHTML = f("sinan simsek şç") ; */
 
- const animals = ["cat" , "dog" , "bird", "horse"];
+// const animals = ["cat" , "dog" , "bird", "horse"];
   
 /* animals.forEach((value , index , array) => {
   console.log('value: ', value );
@@ -333,7 +333,7 @@ d.innerHTML = animals.forEach((value , index , array) => {
 }) ;
 d.innerHTML = newArr ; // bird, horse */
 
-const maaslar = [ 1100, 13000, 2500, 4500, 1500, 25000, 2000 ] ;
+/* const maaslar = [ 1100, 13000, 2500, 4500, 1500, 25000, 2000 ] ;
 const yeniMaaslar = maaslar.map((e)=>{
     if(e > 3000)
         return e * 1.15;
@@ -342,9 +342,50 @@ const yeniMaaslar = maaslar.map((e)=>{
 });
 
 d.innerHTML = yeniMaaslar ;
+ */
 
+let obje = {
+    isim : "sinan",
+    soyisim : "şimşek",
+    yas : "36",
+    "1kg" : 26,
+    f : function(){
+        return `${this.isim[0].toUpperCase()}. ${this.soyisim}` ;
+    }
+}
 
+// d.innerHTML = obje["1kg"] ;
+// d.innerHTML = Object.keys(obje) // isim,soyisim,yas,1kg
+// d.innerHTML = Object.values(obje) // sinan,şimşek,36,26
+/* keys = Object.entries(obje) ;
+d.innerHTML = "" ;
+keys.forEach(i => {   
+    d.innerHTML +=  i + "<br/>";
+});
+keys = Object.keys(obje) ;
+d.innerHTML = "" ;
+keys.forEach(i => {   
+    d.innerHTML +=  i + "<br/>";
+});
+keys = Object.values(obje) ;
+d.innerHTML = "" ;
+keys.forEach(i => {   
+    d.innerHTML +=  i + "<br/>";
+});
+d.innerHTML = obje.f() ;
+ */
 
+let arr = [100,200,300,400,500,600] ;
+let [s1, s2, ...others] = arr ;
+function f(arr){
+    let result = "" ;
+    for(let i = 0 ; i < others.length ; i++){
+        result += others[i] + "<br/>" ;
+    }
+    return result ;
+}
+
+d.innerHTML = f(others) ; // d.innerHTML = f(arr) ;
 
 
 
