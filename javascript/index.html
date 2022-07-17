@@ -29,6 +29,7 @@
     <button onclick="classSil()">class Sil</button>
     <button onclick="classToggle()">class togge</button>
     <button onclick="testTernary()">ternary test</button>
+    <button onclick="f()">Gönder</button>
     <div id="demo" class="">
       deneme text
     </div>
@@ -169,6 +170,22 @@
             (a == 200) ? icerik.innerHTML = "200 sayısı girdin" :
             icerik.innerHTML = "girdiğiniz değer ne  20 ne de 200 dür " ;
         }
+
+        function f(){
+            let m = gelenVeri.value ;
+            let txt = "" ;
+            try{
+                for(let i = m.length - 1  ; i >= 0 ; i--){
+                txt += m[i] ; 
+            }
+            console.log(txt) ;
+            }catch(err){
+                console.log(err) ;
+            }
+          }
+        
+// d.innerHTML = valid() ;
+
         //d.innerHTML = Math.round(Math.random()*10);
         // d.innerHTML = typeof("25");
         // d.innerHTML = Boolean(Symbol());
@@ -375,7 +392,7 @@ keys.forEach(i => {
 d.innerHTML = obje.f() ;
  */
 
-let arr = [100,200,300,400,500,600] ;
+/* let arr = [100,200,300,400,500,600] ;
 let [s1, s2, ...others] = arr ;
 function f(arr){
     let result = "" ;
@@ -384,8 +401,12 @@ function f(arr){
     }
     return result ;
 }
+ */
 
-d.innerHTML = f(others) ; // d.innerHTML = f(arr) ;
+
+
+
+
 
 
 
