@@ -71,7 +71,7 @@ echo getCategories($categories) ;
 
 
 
-echo ucgen(55) ;
+echo ucgen(15) ;
 
 
 

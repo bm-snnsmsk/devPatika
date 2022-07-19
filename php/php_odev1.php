@@ -1,15 +1,17 @@
 <?php
 function ucgen($satir){
+    $init = 1 ;
     $result = "" ;
-    for($i = 1 ; $i <= $satir ; $i++){
-        for($j = 0 ; $j < $i ; $j++){
+    while($init <= $satir){
+        for($j = 0 ; $j < $init ; $j++){
             $result.="0 " ;
         }
         $result.="<br/>" ;
+        $init++ ;
     }
     return $result ;
 }
 
-echo ucgen(15) ;
+//echo ucgen(15) ;
 
 ?>
